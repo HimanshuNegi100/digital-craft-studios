@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -19,10 +21,20 @@
   z-index: 100;
   border-bottom: 2px solid black;
 }
+.navbar-brand {
+  letter-spacing: 0.9mm;
+}
+.double-border {
+  color: transparent;
+  -webkit-text-stroke: 1px blanchedalmond;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
 main {
-  background-color: #f0f0f0;
+  background-color: blanchedalmond;
   padding-top: 40px;
+  width: 100%;
 }
 
 section {
@@ -40,7 +52,6 @@ section {
   font-weight: bold;
   margin-top: 35px;
   margin-bottom: 20px;
-  font-family: "Arial", sans-serif;
 }
 .sub-heading {
   font-size: 2rem;
@@ -58,8 +69,9 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-width: 500px;
+  flex-wrap: wrap;
 }
 .card {
   width: 30%;
@@ -91,6 +103,7 @@ section {
   width: 50px;
   border-radius: 50%;
   margin-right: 10px;
+  border: 2px solid black;
 }
 .author {
   font-size: 1.1rem;
@@ -110,6 +123,7 @@ section {
   width: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
+  border: 2px solid black;
 }
 #team-section {
   width: 100%;
@@ -122,6 +136,7 @@ section {
 }
 #gallery-carousel {
   width: 80%;
+  border: 2px solid black;
 }
 #contact {
   margin-top: 10px;
@@ -138,5 +153,12 @@ section {
   font-size: large;
 }
 .break {
-  box-shadow: 5px 0px 5px 5px #b2b4b2;
+  border: 3px solid rgb(0, 0, 0);
+
+  width: 100%;
+}
+.social-media > a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
 }
